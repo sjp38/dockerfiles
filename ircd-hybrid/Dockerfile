@@ -2,7 +2,7 @@
 #
 # VERSION               1.0.0
 
-FROM debian
+FROM debian:wheezy
 MAINTAINER Niko Montonen "nikomo@nikomo.fi"
 
 RUN apt-get update
@@ -11,6 +11,7 @@ RUN apt-get install -y nano dialog irssi ircd-hybrid supervisor
 
 RUN rm /etc/ircd-hybrid/ircd.conf
 ADD ircd.conf /etc/ircd-hybrid/ircd.conf
+ADD ircd.motd /etc/ircd-hybrid/ircd.motd
 RUN chmod 660 /etc/ircd-hybrid/ircd.conf
 RUN chown irc:irc /etc/ircd-hybrid/ircd.conf
 

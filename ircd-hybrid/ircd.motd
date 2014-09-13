@@ -1,0 +1,23 @@
+
+
+IRC
+===
+
+Welcome, this is irc server.
+
+Basic usage
+-----------
+
+/list
+	List out channels.
+
+/join <channel name>
+	Join to a channel.
+	If you enter a channel name which are not
+	listed by /list command, you can create new channel.
+
+/nick <nickname>
+	Set your nickname which others can see.
+
+/query <other's nickname>
+	Create a new chat room with other.
