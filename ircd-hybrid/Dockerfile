@@ -3,7 +3,7 @@
 # VERSION               1.0.0
 
 FROM debian:wheezy
-MAINTAINER Niko Montonen "nikomo@nikomo.fi"
+MAINTAINER SeongJae Park "sj38.park@gmail.com"
 
 RUN apt-get update
 RUN apt-get upgrade -y
